@@ -6,13 +6,21 @@
     <servlet-name>HelloServlet</servlet-name>
     <servlet-class>com.tenco.HelloServlet</servlet-class>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>
     <url-pattern>/hello-servlet</url-pattern>
   </servlet-mapping>
-  
   <display-name>hello_servlet</display-name>
+  
+  <servlet>
+    <description></description>
+    <display-name>MyServlet</display-name>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>com.tenco.MyServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -21,4 +29,5 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
 </web-app>
