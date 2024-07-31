@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	background-color: #f0f0f0;
+	margin: 0;
+}
+
+.container {
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 300px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-top: 20px;
+}
+
+input[type="number"] {
+	height: 30px;
+}
+
+input[type="submit"] {
+	margin-top: 20px;
+	height: 35px;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+	color: white;
+	border: none;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>간단한 계산기</h1>
+		<form action="calculate.jsp" method="POST">
+			<label for="num1">첫번쨰 숫자 입력</label> <input type="number" id="num1"
+				name="num1" required="required"> <label for="num2">두번쨰
+				숫자 입력</label> <input type="number" id="num2" name="num2" required="required">
+
+			<input type="submit" value="계산 요청하기">
+		</form>
+	</div>
+</body>
+</html>

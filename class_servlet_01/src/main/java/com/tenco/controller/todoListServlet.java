@@ -32,6 +32,7 @@ public class todoListServlet extends HttpServlet {
 		
 		response.setContentType("text/html;charset=UTF-8");
 		// HTML 파일 읽기
+
 		String htmlFilePath ="/todoListPage.html";
 		InputStream inputStream = getServletContext().getResourceAsStream(htmlFilePath);
 		if (inputStream == null) {
